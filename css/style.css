@@ -5,6 +5,10 @@
   --blueKing: #232946;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background: var(--blueKing);
@@ -13,14 +17,12 @@ body {
 }
 
 .header {
-  border: 1px solid blue;
   position: sticky;
   inset-block-start: 0;
   margin-block-start: 100px;
 }
 
 .wrapper {
-  border: 1px solid red;
   max-inline-size: 636px;
   margin-inline-start: 530px;
 }
@@ -30,7 +32,6 @@ body {
 }
 
 .header header {
-  border: 1px solid yellow;
   position: absolute;
   inline-size: 222px;
   inset-inline-start: -330px;
@@ -77,12 +78,14 @@ h1 {
 }
 
 h2 {
+  margin-block: 0;
   font-size: 40px;
   font-weight: 700;
   line-height: 48px;
 }
 
 h3 {
+  margin-block: 16px;
   font-size: 32px;
   font-weight: 600;
   line-height: 39px;
@@ -99,3 +102,37 @@ li {
   color: var(--grayBlue);
 }
 
+hr {
+margin-block-start: 58px;
+margin-block-end: 40px;
+border: 1px solid rgba(97, 97, 97, 0.2);
+}
+
+.setup img {
+  display: block;
+  margin-block-start: 40px;
+}
+
+blockquote {
+  margin: 0;
+  margin-block-start: 58px;
+  margin-block-end: 31px;
+  padding: 24px;
+  background: var(--pink);
+  border-radius: 8px;
+}
+
+blockquote p {
+  margin: 0;
+  color: var(--blueKing);
+  font-size: 24px;
+  line-height: 32px;
+}
+
+blockquote p span::before {
+  content: "- ";
+}
+
+blockquote p:last-of-type {
+  margin-block-start: 16px;
+}
