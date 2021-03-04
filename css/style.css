@@ -136,3 +136,41 @@ blockquote p span::before {
 blockquote p:last-of-type {
   margin-block-start: 16px;
 }
+
+.conceptos h3 {
+  margin-block-start: 40px;
+}
+
+pre {
+  /* border: 1px solid red; */
+  padding: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFE;
+}
+
+.modelo {
+  margin-block-start: 80px;
+}
+
+.modelo h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.modelo h3 {
+  margin-block-start: 40px;
+}
+
+.regular {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.semi {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+}
