@@ -56,6 +56,7 @@ body {
 .header header details ol {
   margin-block-start: 16px;
   margin-block-end: 24px;
+  padding-inline-start: 30px;
 }
 
 .header header details li {
@@ -100,6 +101,8 @@ p {
 
 li {
   color: var(--grayBlue);
+  font-size: 17px;
+  line-height: 24px;
 }
 
 hr {
@@ -174,3 +177,107 @@ pre {
   font-size: 32px;
   line-height: 39px;
 }
+
+  .modelo ol {
+  margin: 0;
+  padding-inline-start: 20px;
+}
+
+  .modelo ul {
+    margin-inline-start: 20px;
+    padding-inline-start: 0;
+  }
+
+  .modelo ul li {
+    margin-block-end: 16px;
+    list-style: none;
+    position: relative;
+  }
+
+  .modelo ul li::before {
+    content: "";
+    display: inline-block ;
+    inline-size: 8px;
+    block-size: 8px;
+    border-radius: 50%;
+    background: var(--white);
+    margin-inline-end: 16px;
+    position: absolute;
+    inset-block-start: 10px;
+    inset-inline-start: -20px;
+  }
+
+  .slider {
+    border: 1px solid red;
+  }
+
+  .slider-container {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .slider-slide {
+    display: inline-block;
+    inline-size: 100%;
+    border: 1px solid blue;
+  }
+
+  .bullet-list {
+    margin-block-start: 16px;
+    text-align: center;
+    font-size: 0;
+  }
+
+  .bullet-list a {
+    display: inline-block;
+    inline-size: 16px;
+    block-size: 16px;
+    border-radius: 50%;
+    background:  rgba(66, 66, 66, 0.2);
+    margin-inline: 4px;
+  }
+
+  .bullet-list a:hover {
+    background: var(--white);
+  }
+
+  .contact-me {
+    margin-block: 40px;
+    color: var(--white);
+  }
+
+  .contact-me a {
+    color: var(--pink);
+  }
+
+  .form input {
+    display: block;
+    inline-size: 100%;
+    box-sizing: border-box;
+    margin-block-end: 24px;
+    padding-block: 12px;
+    padding-inline: 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    background: var(--blueKing);
+    border: 1px solid var(--white);
+    color: var(--white);
+  }
+
+  input[type="submit"] {
+    background: var(--pink);
+    border: none;
+    color: var(--blueKing);
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .form p {
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--white);
+  }
+
