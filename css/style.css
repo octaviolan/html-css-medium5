@@ -208,7 +208,7 @@ pre {
   }
 
   .slider {
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .slider-container {
@@ -221,7 +221,7 @@ pre {
   .slider-slide {
     display: inline-block;
     inline-size: 100%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
 
   .bullet-list {
@@ -279,5 +279,28 @@ pre {
     font-size: 24px;
     line-height: 29px;
     color: var(--white);
+  }
+
+  .footer {
+    margin-block-start: 80px;
+    background: var(--pink);
+    text-align: center;
+    padding-block: 48px;
+  }
+
+  .footer p {
+    margin-block-start: 0;
+    margin-block-end: 19px;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--blueKing);
+  }
+
+  .social {
+    font-size: 0;
+  }
+
+  .social img {
+    margin-inline: 11px;
   }
 
