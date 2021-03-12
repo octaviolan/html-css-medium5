@@ -219,9 +219,15 @@ pre {
   }
 
   .slider-slide {
+    block-size: auto;
+    /* border: 1px solid blue; */
+  }
+
+  .slider-slide iframe {
     display: inline-block;
     inline-size: 100%;
-    /* border: 1px solid blue; */
+    block-size: auto;
+    aspect-ratio: 16/9;
   }
 
   .bullet-list {
